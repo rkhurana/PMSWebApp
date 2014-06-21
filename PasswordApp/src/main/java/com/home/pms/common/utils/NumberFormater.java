@@ -3,6 +3,7 @@
  */
 package com.home.pms.common.utils;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 /**
@@ -36,5 +37,23 @@ public class NumberFormater {
 			newNum = Double.parseDouble(new DecimalFormat(format).format(num));
 		}
 		return newNum;
+	}
+	
+	/**
+	 * Gets the formated number an string.
+	 * 
+	 * @param num
+	 *            the num
+	 * @param format
+	 *            the format
+	 * @return the formated number an string
+	 */
+	public static String getFormatedNumberAnString(final Double num, final String format) {
+		if (StringUtils.isEmptyString(format)) {
+			return BigDecimal.valueOf(num).toPlainString();
+		}
+		else {
+			return Double.toString(getFormatedNumber(num, format));
+		}
 	}
 }
