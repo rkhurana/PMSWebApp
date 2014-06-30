@@ -3,6 +3,10 @@
  */
 package com.home.pms.common.utils;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -20,7 +24,12 @@ public class SetUtils {
 	 */
 	private SetUtils() {
 	}
-	
+	/**
+	 * @return innstace of the class
+	 */
+	public static SetUtils getInstance() {
+		return new SetUtils();
+	}
 	/**
 	 * <p>
 	 * This method checks whether the given Set is Empty or not. Set. This
@@ -38,4 +47,46 @@ public class SetUtils {
 		}
 		return isEmptySet;
 	}
+	/**
+	 * @param oRef
+	 * @return
+	 */
+	public int size(final Set oRef){
+		
+		if ((oRef != null) || (oRef.size() != 0)) {
+		return oRef.size();
+		}
+		return 0;
+	}
+	/**
+	 * @param setRef
+	 * @return
+	 */
+	public	Object getFirstElement(final Set<?> setRef){
+		if ((setRef == null) || (setRef.size() != 0)) {
+		Iterator it=  setRef.iterator();
+		while(it.hasNext()){
+			return it.next();
+		  }
+		}
+		return null;
+		
+	}
+	public	List<Object> toList(final Set<?> setRef){
+		List list =new ArrayList();
+		if ((setRef == null) || (setRef.size() != 0)) {
+			list.addAll(setRef);
+			return list;
+		}
+		return null;
+		
+	}
+	public	String toString(final Set<?> setRef){
+		if ((setRef == null) || (setRef.size() != 0)) {
+			return setRef.toString();
+		}
+		return null;
+		
+	}
+	
 }
