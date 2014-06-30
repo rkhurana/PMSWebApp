@@ -10,13 +10,19 @@ import org.junit.Test;
 public class ListUtilsTest {
 
 		ListUtils listUtils = ListUtils.getInstance();
+	/**
+	 * Test method for {@link com.home.pms.common.utils.ListUtils#isEmptySet(java.util.List)}.
+	 */
 	@Test
 	public void testIsEmptyList() {
 		List<String> refList= new ArrayList();
 		refList.add("A");
 		listUtils.isEmptyList(refList);
-		System.out.println(listUtils.isEmptyList(refList));
+		System.out.println("testIsEmptyList  "+listUtils.isEmptyList(refList));
 	}
+	/**
+	 * Test method for {@link com.home.pms.common.utils.ListUtils#GetFirstElement(java.util.List)}.
+	 */
 
 	@Test
 	public void testGetFirstElement() {
@@ -24,19 +30,28 @@ public class ListUtilsTest {
 		refList.add("Rohit");
 		refList.add("nandu");
 		refList.add("mukesh");
-		System.out.println(listUtils.getFirstElement(refList));
+		System.out.println("testGetFirstElement  "+listUtils.getFirstElement(refList));
 		fail("Not yet implemented");
 	}
 
+	/**
+	 * 
+	 * Test method for {@link com.home.pms.common.utils.ListUtils#GetLastElement(java.util.List)}.
+	 */
+	 
 	@Test
 	public void testGetLastElement() {
 		List<String> refList= new ArrayList();
 		refList.add("Rohit");
 		refList.add("nandu");
 		refList.add("mukesh");
-		System.out.println(listUtils.getLastElement(refList));
+		System.out.println("testGetLastElement  "+listUtils.getLastElement(refList));
 		fail("Not yet implemented");
 	}
+	/**
+	 * 
+	 * Test method for {@link com.home.pms.common.utils.ListUtils#ConvertToStringArray(java.util.List)}.
+	 */
 
 	@Test
 	public void testConvertToStringArray() {
@@ -44,7 +59,7 @@ public class ListUtilsTest {
 		refList.add("Rohit");
 		refList.add("nandu");
 		refList.add("mukesh");
-		System.out.println(listUtils.convertToStringArray(refList));
+		System.out.println("testConvertToStringArray "+listUtils.convertToStringArray(refList));
 		fail("Not yet implemented");
 	}
 
