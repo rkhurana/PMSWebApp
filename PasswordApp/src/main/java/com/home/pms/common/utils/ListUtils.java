@@ -23,6 +23,12 @@ public class ListUtils {
 	
 
 	/**
+	 * @return innstace of the class
+	 */
+	public static ListUtils getInstance() {
+		return new ListUtils();
+	}
+	/**
 	 * <p>
 	 * Checks if given list is empty.
 	 * </p>
@@ -32,6 +38,7 @@ public class ListUtils {
 	 * @return true, if is empty list
 	 */
 	public static boolean isEmptyList(final List<?> refList) {
+		System.out.println(refList.get(0));
 		return (refList == null) || (refList.size() == 0) ? true : false;
 	}
 	
@@ -61,10 +68,11 @@ public class ListUtils {
 	 * @return
 	 */
 	public	String[] convertToStringArray(final List<?> refList){
+		String[] strResult = null;
 		if (refList != null || !refList.isEmpty()) {
-			String[] strResult=new String[refList.size()];  
-			refList.toArray(strResult);
+			 strResult=new String[refList.size()];  
+			strResult=	refList.toArray(strResult);
 		}
-		return null;
+		return strResult;
 	}
 }
