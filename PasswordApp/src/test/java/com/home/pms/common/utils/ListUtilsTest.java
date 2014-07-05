@@ -31,7 +31,6 @@ public class ListUtilsTest {
 		refList.add("nandu");
 		refList.add("mukesh");
 		System.out.println("testGetFirstElement  "+listUtils.getFirstElement(refList));
-		fail("Not yet implemented");
 	}
 
 	/**
@@ -46,7 +45,6 @@ public class ListUtilsTest {
 		refList.add("nandu");
 		refList.add("mukesh");
 		System.out.println("testGetLastElement  "+listUtils.getLastElement(refList));
-		fail("Not yet implemented");
 	}
 	/**
 	 * 
@@ -60,7 +58,6 @@ public class ListUtilsTest {
 		refList.add("nandu");
 		refList.add("mukesh");
 		System.out.println("testConvertToStringArray "+listUtils.convertToStringArray(refList));
-		fail("Not yet implemented");
 	}
 
 }

@@ -26,7 +26,6 @@ public class SetUtilsTest {
 		Set setRef = new HashSet();
 		setRef.add("Objcet");
 		System.out.println("testIsEmptySet "+setUtils.isEmptySet(setRef));
-		fail("Not yet implemented"); // TODO
 	}
 
 	/**
@@ -39,7 +38,6 @@ public class SetUtilsTest {
 		setRef.add("Nandan");
 		setRef.add("Mukhesh");
 		System.out.println("testSize "+setUtils.size(setRef));
-		fail("Not yet implemented"); // TODO
 	}
 
 	/**
@@ -52,7 +50,6 @@ public class SetUtilsTest {
 		setRef.add("Nandan");
 		setRef.add("Mukhesh");
 		System.out.println("testGetFirstElement "+setUtils.getFirstElement(setRef));
-		fail("Not yet implemented"); // TODO
 	}
 	
 	/**
@@ -65,7 +62,6 @@ public class SetUtilsTest {
 		setRef.add("Nandan");
 		setRef.add("Mukhesh");
 		System.out.println("testToList "+setUtils.toList(setRef));
-		fail("Not yet implemented"); // TODO
 	}
 	/**
 	 * Test method for {@link com.home.pms.common.utils.SetUtils#testToString(java.lang.String)}.
