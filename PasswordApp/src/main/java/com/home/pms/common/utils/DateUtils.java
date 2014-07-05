@@ -307,7 +307,7 @@ public class DateUtils {
 	}
 
 	/**
-	 * Difference.
+	 * This method finds the difference between two dates.
 	 * 
 	 * @param startDate
 	 *            the start date
