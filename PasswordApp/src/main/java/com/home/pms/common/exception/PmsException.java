@@ -6,6 +6,8 @@ package com.home.pms.common.exception;
 import com.home.pms.common.utils.StringUtils;
 
 /**
+ *  The Class ReconException that extends Exception class. 
+ *  
  * @author Rohit Khurana
  *
  */
