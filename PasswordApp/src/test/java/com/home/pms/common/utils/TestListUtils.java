@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class ListUtilsTest {
+public class TestListUtils {
 
 		ListUtils listUtils = ListUtils.getInstance();
 	/**

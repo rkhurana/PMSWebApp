@@ -14,7 +14,7 @@ import org.junit.Test;
  * @author nandan
  *
  */
-public class SetUtilsTest {
+public class TestSetUtils {
 	
 	SetUtils setUtils = SetUtils.getInstance();
 
